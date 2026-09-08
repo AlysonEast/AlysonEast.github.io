@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From tree crowns to forest patterns, Alyson East</title>
+  <meta name="description" content="Scaling from individual tree crowns to landscape forest patterns with multimodal remote sensing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Alyson East</a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#research" aria-current="page">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="subhero">
+    <div class="wrap">
+      <a class="backlink" href="index.html#research">&larr; Research</a>
+      <h1>From tree crowns to forest patterns</h1>
+      <p class="role">Scaling with remote sensing, from the individual tree to the landscape</p>
+      <!-- Optional banner image: add assets/forest-hero.jpg. Hidden automatically until it exists. -->
+      <img class="subhero-img" src="assets/forest-hero.jpg" alt="Forest canopy from above"
+           onerror="this.style.display='none'">
+    </div>
+  </header>
+
+  <section style="padding-top:36px;">
+    <div class="wrap">
+      <div class="prose">
+        <p>I use fine-scale remote sensing to segment individual tree crowns and link them to forest
+           size-abundance patterns. My work explores how local structure scales up to landscape dynamics,
+           advancing theory in forest and landscape ecology.</p>
+        <p>Working with multimodal remote sensing, including airborne LiDAR, hyperspectral, and
+           high-resolution imagery, I develop and compare crown-segmentation approaches across spatial
+           resolutions. The resulting individual-tree maps let me test how fine-scale forest structure
+           gives rise to landscape-scale patterns of size, abundance, and diversity.</p>
+        <p>This work builds on earlier remote-sensing research using GEDI spaceborne LiDAR to measure
+           forest structure and disturbance in tropical forests, and connects to the ForestForTrees R
+           package for inferring forest structure from remote sensing data. Together these tools help
+           scale ecological insight from the individual tree to the continent.</p>
+      </div>
+
+      <!-- ===== Live metrics =====
+           Altmetric (attention) and Dimensions (citations) load live by DOI in the visitor's browser.
+           Change data-doi to feature a different paper. -->
+      <div class="metrics" aria-label="Project metrics">
+        <div class="metric">
+          <div class="metric-badge">
+            <div class="altmetric-embed" data-doi="10.1111/2041-210X.70309"
+                 data-badge-type="donut" data-badge-popover="right" data-hide-no-mentions="false"></div>
+          </div>
+          <div class="metric-label">Altmetric attention, ForestForTrees paper</div>
+        </div>
+        <div class="metric">
+          <div class="metric-badge">
+            <span class="__dimensions_badge_embed__" data-doi="10.1111/2041-210X.70309"
+                  data-style="small_circle"></span>
+          </div>
+          <div class="metric-label">Citations (Dimensions)</div>
+        </div>
+      </div>
+      <p class="metrics-note">Attention and citation counts update automatically as the work is cited and
+        shared. The crown-segmentation chapter is in progress; its metrics will appear here once published.</p>
+
+      <h2 style="margin-top:48px;">Publications</h2>
+      <ul class="pub-inline">
+        <li>
+          <span class="pub-authors">Eichenwald, A., J. M. Grady, <span class="me">A. East</span>, N. Charney, and S. Record. (2026).</span>
+          <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70309">ForestForTrees:
+          an R package to infer forest structure from remote sensing data.</a>
+          <span class="pub-venue">Methods in Ecology and Evolution.</span>
+          <span class="pub-meta">Validated the package.</span>
+        </li>
+        <li>
+          <span class="pub-authors"><span class="me">East, A.</span>, A. J. Hansen, P. A. Jantz, D. Roberts, and D. Armenteras-Pascual. (2024).</span>
+          Validation and error minimization of GEDI data in the South American tropics.
+          <span class="pub-venue">Remote Sensing</span> 16(19).
+        </li>
+        <li>
+          <span class="pub-authors"><span class="me">East, A.</span>, A. Hansen, D. Armenteras, P. Jantz, and D. Roberts. (2023).</span>
+          Measuring understory fire effects from space: canopy change in response to tropical understory
+          fire and what this means for applications of GEDI for tropical fire.
+          <span class="pub-venue">Remote Sensing</span> 15: 696.
+        </li>
+        <li>
+          <span class="pub-authors"><span class="me">East, A.</span>, et al. (in prep).</span>
+          Multimodal crown segmentation across spatial resolutions.
+          <span class="pub-meta">Dissertation chapter; presented at AGU 2025.</span>
+        </li>
+      </ul>
+
+      <h2 style="margin-top:48px;">Collaborators &amp; resources</h2>
+      <ul class="facts">
+        <li><span class="k">Collaborators</span>
+            <span class="v"><a href="https://sites.google.com/maine.edu/record-lab">Record Lab, University
+            of Maine</a>, <a href="https://imageomics.osu.edu/">NSF Imageomics Institute</a></span></li>
+        <li><span class="k">Software</span>
+            <span class="v">ForestForTrees R package (see paper above)</span></li>
+        <li><span class="k">Status</span>
+            <span class="v">Crown-segmentation dissertation chapter in progress</span></li>
+      </ul>
+
+      <h2 style="margin-top:48px;">Gallery</h2>
+      <p class="gallery-empty">To add photos, drop square images into <code>assets/forest/</code> and
+        uncomment the gallery block in this file (instructions in README.md).</p>
+      <!--
+      <div class="gallery">
+        <img src="assets/forest/01.jpg" alt="" onerror="this.style.display='none'">
+        <img src="assets/forest/02.jpg" alt="" onerror="this.style.display='none'">
+        <img src="assets/forest/03.jpg" alt="" onerror="this.style.display='none'">
+      </div>
+      -->
+
+      <a class="section-link" href="index.html#research">&larr; Back to research</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Alyson East</span>
+    <span>University of Maine, Record Lab</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<!-- Metric badge scripts (load live numbers from Altmetric and Dimensions) -->
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+</body>
+</html>
