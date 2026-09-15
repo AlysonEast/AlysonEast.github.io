@@ -5,15 +5,19 @@
    ========================================================= */
 
 :root {
-  --paper:      #f5f7f1;  /* cool herbarium-paper background */
-  --paper-deep: #ecefe4;  /* slightly recessed panels        */
-  --surface:    #ffffff;  /* raised surfaces, photos          */
-  --ink:        #1b2820;  /* deep forest / carabid green-black */
-  --ink-soft:   #4c5a50;  /* secondary text                   */
-  --ink-faint:  #78857b;  /* captions, dates                  */
-  --line:       #d7ddcf;  /* hairline dividers                */
-  --accent:     #235f55;  /* spruce-teal: links, interaction  */
-  --accent-deep:#143f38;  /* hover / active                   */
+  /* Earth tones. Source swatches: #DDCBB7 sand, #7B4B36 bark,
+     #264025 deep forest, #82896E lichen, #AD6B4B terracotta. */
+  --paper:      #f7f2ea;  /* warm sand-paper background, tint of #DDCBB7 */
+  --paper-deep: #ece1d2;  /* slightly recessed panels, photo placeholders */
+  --surface:    #fffdf9;  /* raised surfaces, photos          */
+  --ink:        #264025;  /* deep forest green                */
+  --ink-soft:   #545a49;  /* secondary text                   */
+  --ink-faint:  #6b7059;  /* captions, dates (lichen, darkened for contrast) */
+  --line:       #ddd0bd;  /* hairline dividers                */
+  --accent:     #7b4b36;  /* bark brown: links, interaction   */
+  --accent-deep:#5c3626;  /* hover / active                   */
+  --accent-warm:#ad6b4b;  /* terracotta: decorative marks only, not text */
+  --lichen:     #82896e;  /* muted sage, decorative           */
 
   --measure: 68ch;        /* prose line length                */
   --serif: "Spectral", Georgia, "Times New Roman", serif;
@@ -139,7 +143,7 @@ p { margin: 0 0 1.1rem; max-width: var(--measure); }
 .highlights li:last-child { border-bottom: 0; }
 .highlights li::before {
   content: ""; position: absolute; left: 0; top: 24px;
-  width: 7px; height: 7px; background: var(--accent); border-radius: 50%;
+  width: 7px; height: 7px; background: var(--accent-warm); border-radius: 50%;
 }
 
 /* ---------- research ---------- */

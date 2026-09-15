@@ -7,7 +7,8 @@ dependencies. Hosted free on GitHub Pages.
 
 | File | What it is |
 |------|------------|
-| `index.html` | Home: about, selected highlights, research overview, full news feed, contact |
+| `index.html` | Home: about, selected highlights, one-paragraph research statement, full news feed, contact |
+| `research.html` | Research overview: current projects and earlier work |
 | `publications.html` | Full publication and conference-paper list |
 | `teaching.html` | Teaching philosophy, courses (from CV), and mentorship |
 | `research-forest-scaling.html` | In-depth project page, with live metrics |
@@ -17,9 +18,8 @@ dependencies. Hosted free on GitHub Pages.
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is |
 
 Navigation: **About · Research · Publications · Teaching · News · Contact**.
-About, Research, News, and Contact are sections of the home page; Publications and
-Teaching are their own pages; the two project pages are reached from the Research
-section on the home page.
+About, News, and Contact are sections of the home page; Research, Publications, and
+Teaching are their own pages; the two project pages are reached from `research.html`.
 
 ---
 

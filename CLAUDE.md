@@ -21,7 +21,8 @@ dependencies. Keep everything editable by hand.
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Home: about, Selected highlights, Research overview, full News feed, Contact |
+| `index.html` | Home: about, Selected highlights, one-paragraph research statement, full News feed, Contact |
+| `research.html` | Research overview: the two current projects + additional and earlier research |
 | `publications.html` | Full publication + conference-paper list |
 | `teaching.html` | Teaching philosophy, courses (grouped by institution), mentorship |
 | `research-forest-scaling.html` | In-depth project page (tree crowns → forest patterns) + live metrics |
@@ -31,15 +32,19 @@ dependencies. Keep everything editable by hand.
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
 Nav on every page: **About · Research · Publications · Teaching · News · Contact**.
-About / Research / News / Contact are sections of `index.html`; Publications and
-Teaching are their own pages; the two project pages are linked from the Research
-section on the home page. If you change the nav, change it in every HTML file.
+About / News / Contact are sections of `index.html`; Research, Publications, and
+Teaching are their own pages; the two project pages are linked from `research.html`.
+The home page keeps a short `#research` section: a one-paragraph statement plus a link
+to `research.html`. If you change the nav, change it in every HTML file.
 
 ## Design system (do not drift from this)
 
 Defined once in `style.css` under `:root`:
-- Colors: `--paper #f5f7f1`, `--ink #1b2820`, `--accent #235f55` (spruce-teal),
-  plus soft/faint variants and `--line` for dividers.
+- Colors (earth tones): `--paper #f7f2ea` (warm sand), `--ink #264025` (deep forest),
+  `--accent #7b4b36` (bark brown, all text links), plus `--accent-warm #ad6b4b`
+  (terracotta, decorative marks only, too light for text) and `--lichen #82896e`,
+  soft/faint ink variants, and `--line` for dividers. Every text token clears WCAG AA
+  on `--paper`; keep it that way if you retune them.
 - Type: `--serif` = Spectral (name, headings, narrative); `--sans` = IBM Plex Sans
   (nav, dense lists, dates, labels).
 - Prose line length is capped (`--measure`). Keep it.
