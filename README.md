@@ -14,6 +14,7 @@ dependencies. Hosted free on GitHub Pages.
 | `research-forest-scaling.html` | In-depth project page, with live metrics |
 | `research-beetles.html` | In-depth project page, with live metrics |
 | `style.css` | All styling for every page (edit once, changes everywhere) |
+| `site.js` | The small bit of behaviour: sections fading in as you scroll, the news scroll panel, the news count, the year in the footer |
 | `assets/` | Images and files (CV PDF, photos, gallery images) |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is |
 
@@ -54,27 +55,66 @@ Every update is editing a text file and committing. Edit on github.com (pencil
 icon) or locally then `git push`.
 
 ### Add a news item
-On `index.html`, find the month inside the `id="news"` section, copy one
-`<li>…</li>`, paste it at the **top** of that month, and edit the text.
+The news feed is one flat list, newest first. Every item carries its own date,
+so there are no month or year headings to keep in order. On `index.html`, inside
+the `id="news"` section, copy one item, paste it at the **top** of the list, and
+edit the date and the text:
 
-**Bold a key phrase** the way the feed already does by wrapping it in `<strong>`:
 ```html
-<li>Delivered an <strong>invited talk</strong> at the ESA Annual Meeting.</li>
+<article class="news-item">
+  <div class="news-date">Oct 2026</div>
+  <div><p>Delivered an <strong>invited talk</strong> at the ESA Annual Meeting.</p></div>
+</article>
 ```
-Keep it to one bold phrase per item so the emphasis stays meaningful. New months
-or years follow the pattern already in the file (`<h3 class="news-year">` for a
-year, `<div class="news-month">` for a month).
+
+Keep it to one bold phrase per item so the emphasis stays meaningful. Dates use
+the short form already in the file (`Jan`, `Mar`, `Apr`, `May`, `June`, `July`,
+`Aug`, `Sept`, `Oct`, `Dec`, then the year).
+
+The list is capped to a comfortable height and scrolls in place, with a soft fade
+at the bottom edge that lifts once you reach the end. Every item stays on the
+page, so browser find-in-page and screen readers still reach all of them. The
+"N updates" line underneath is counted by `site.js`, so it never needs editing.
+To show the whole feed inline instead, delete `scrollpanel` from
+`<div class="news scrollpanel" …>`.
 
 ### Add a publication
-On `publications.html`, find the year's `<ul class="pub-list">` and copy an entry:
+Publications stay grouped by year. On `publications.html`, find the year's
+`<ul class="pub-list">` and copy an entry:
 ```html
-<li>
-  <span class="pub-authors">Author, A., <span class="me">A. East</span>, et al. (2026).</span>
-  <span class="pub-title">Title of the paper.</span>
-  <span class="pub-venue">Journal Name.</span>
+<li class="pub-entry">
+  <div class="pub-body">
+    <h4 class="pub-title"><a href="https://doi.org/...">Title of the paper.</a></h4>
+    <p class="pub-authors">Author, A., <span class="me">A. East</span>, et al. (2026).</p>
+    <p class="pub-venue">Journal Name 17(7): 2052-2060.</p>
+    <p class="pub-links">
+      <a href="https://doi.org/...">Paper</a>
+      <a href="https://github.com/...">Code</a>
+    </p>
+  </div>
 </li>
 ```
 `<span class="me">` bolds your name. Wrap the content in `<a href="…">…</a>` to link it.
+
+### Add a figure to a publication
+Put the image in `assets/Pubs/`, add `pub-entry--media` to the `<li>`, and add a
+`.pub-fig` block right after `</div>` closes `.pub-body`:
+```html
+<li class="pub-entry pub-entry--media">
+  <div class="pub-body"> ... </div>
+  <div class="pub-fig">
+    <img src="assets/Pubs/YourFigure.jpg" alt="What the figure shows."
+         loading="lazy" decoding="async" onerror="this.style.display='none'">
+  </div>
+</li>
+```
+The figure sits in a narrow right-hand column on wide screens and drops below the
+text on phones. Entries without a figure need no extra class. Write the `alt` text
+as a plain description of what the figure shows, for anyone using a screen reader.
+
+Keep the web copy small: at most 900px on the long edge is plenty, since the column
+is about 200px wide. Full-size sources live in `assets/Pubs/originals/`, which the
+site never loads.
 
 ### Add a course or mentee
 On `teaching.html`, copy a `<div class="course">` block (title, a

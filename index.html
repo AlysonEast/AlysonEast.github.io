@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="site.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -65,7 +66,7 @@
   </header>
 
   <!-- ================= HIGHLIGHTS ================= -->
-  <section id="highlights">
+  <section id="highlights" class="rise">
     <div class="wrap">
       <h2>Selected highlights</h2>
       <ul class="highlights">
@@ -73,8 +74,8 @@
             collections into continental-scale trait data.</li>
         <li>Coauthor, Terrestrial Ecosystems chapter of the Nature Record national assessment of U.S.
             ecosystems.</li>
-        <li>Coauthored paper at ICLR (2026) on scalable, interpretable trait annotation with machine
-            learning.</li>
+        <li>Selected for the next cohort of NEON Ambassadors through the National Ecological
+            Observatory Network's Ambassador Program.</li>
         <li>Led the open Sentinel Beetles benchmark dataset, downloaded over 13,000 times and adopted
             for the NSF HDR Machine Learning Challenge.</li>
         <li>First-author protocols for computer-vision imaging of biodiversity specimens in
@@ -86,7 +87,7 @@
 
   <!-- ================= RESEARCH STATEMENT =================
        One-paragraph overview. The projects and earlier work live on research.html. -->
-  <section id="research">
+  <section id="research" class="rise">
     <div class="wrap">
       <h2>Research</h2>
       <p class="lead research-lede narrow">A common thread runs through my work: scaling ecological
@@ -102,43 +103,62 @@
   </section>
 
   <!-- ================= NEWS =================
-       To add an update: copy one <li>, edit it, keep the newest at the top of its month. -->
-  <section id="news">
+       One flat feed, newest first, each item carrying its own date.
+       To add an update: copy one news-item article, set its date, and put it
+       at the top of the list. The count below the panel is filled in by
+       site.js, so it never needs editing. -->
+  <section id="news" class="rise">
     <div class="wrap">
       <h2>News</h2>
 
-      <h3 class="news-year">2026</h3>
+      <div class="news scrollpanel" id="news-feed" tabindex="0" role="region" aria-label="News feed">
+        <article class="news-item">
+          <div class="news-date">Sept 2026</div>
+          <div><p>Selected for the <a href="https://www.neonscience.org/impact/observatory-blog/meet-2026-2028-neon-ambassador-cohort">next cohort</a> of
+            <strong>NEON Ambassadors</strong> through the National
+            Ecological Observatory Network's Ambassador Program.</p></div>
+        </article>
 
-      <div class="news-month">September</div>
-      <ul class="news-list">
-        <li>Selected for the next cohort of <strong>NEON Ambassadors</strong> through the National
-            Ecological Observatory Network's Ambassador Program.</li>
-        <li>Accepted to <strong>co-organize and present</strong> in the symposium "Machine Learning,
+        <article class="news-item">
+          <div class="news-date">Sept 2026</div>
+          <div><p>Accepted to <strong>co-organize and present</strong> in the symposium "Machine Learning,
             Collections, and You: Collections Centered AI Tools and Applications" at the Entomological
             Collections Network (ECN) meeting in Columbus, OH, alongside ESA's Entomology 2026
-            conference (November 2026).</li>
-      </ul>
+            conference (November 2026).</p></div>
+        </article>
 
-      <div class="news-month">August</div>
-      <ul class="news-list">
-        <li>Our work using computer vision to extract trait data from NEON ground beetle collections
+        <article class="news-item">
+          <div class="news-date">Aug 2026</div>
+          <div><p>Our work using computer vision to extract trait data from NEON ground beetle collections
             received the <strong>Best NEON Presentation Award</strong> at the 2026 ESA Annual Meeting. The NEON "Data in
             Action" feature on the project is
-            <a href="https://www.neonscience.org/impact/observatory-blog/can-ai-unlock-hidden-data-biological-collections">here</a>.</li>
-        <li>Attended <a href="https://github.com/Imageomics/FloraPalooza-2026/wiki">FloraPalooza</a> in
-            Columbus, Ohio, where we worked on mapping historic land-use history from images of trees.</li>
-      </ul>
+            <a href="https://www.neonscience.org/impact/observatory-blog/can-ai-unlock-hidden-data-biological-collections">here</a>.</p></div>
+        </article>
 
-      <div class="news-month">July</div>
-      <ul class="news-list">
-        <li>Delivered an <strong>invited symposium talk</strong> in
+        <article class="news-item">
+          <div class="news-date">Aug 2026</div>
+          <div><p>Attended <a href="https://github.com/Imageomics/FloraPalooza-2026/wiki">FloraPalooza</a> in
+            Columbus, Ohio, where we worked on mapping historic land-use history from images of trees.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">July 2026</div>
+          <div><p>Delivered an <strong>invited symposium talk</strong> in
             <a href="https://planion.events/e/esa/am2026/sessions/818613/">Building an AI-Ready Ecology
             and Biodiversity Data Infrastructure for Science and Action</a> at the
             <a href="https://esa.org/saltlake2026/">ESA Annual Meeting in Salt Lake City</a>, UT
-            (theme: Ecology in an Era of Uncertainty).</li>
-        <li>Served as a <strong>panelist</strong> for Getting Into Graduate School and Finding the Right Program at the
-            ESA Annual Meeting Career Central.</li>
-        <li>Attended the in-person <strong>all-author meeting for The Nature Record</strong> in Washington, DC, joining
+            (theme: Ecology in an Era of Uncertainty).</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">July 2026</div>
+          <div><p>Served as a <strong>panelist</strong> for Getting Into Graduate School and Finding the Right Program at the
+            ESA Annual Meeting Career Central.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">July 2026</div>
+          <div><p>Attended the in-person <strong>all-author meeting for The Nature Record</strong> in Washington, DC, joining
             more than 100 contributing authors to work through public comments and National Academies
             review ahead of the final draft. The Nature Record is the first holistic assessment of U.S.
             lands, waters, and wildlife and the benefits they provide, launched in 2022 as the federal
@@ -146,159 +166,222 @@
             effort ended in early 2025. I'm proud that our Chapter 8: Status, Trends, and Future
             Projections of Terrestrial Ecosystems in the US came through the National Academies review so
             strongly. The final assessment will be released online in fall 2026, with an MIT Press book
-            to follow in 2027.</li>
-      </ul>
+            to follow in 2027.</p></div>
+        </article>
 
-      <div class="news-month">June</div>
-      <ul class="news-list">
-        <li>Hosted OSU computer science undergraduate <strong>Nathan Cain</strong> in Maine for a collaborative work
+        <article class="news-item">
+          <div class="news-date">June 2026</div>
+          <div><p>Hosted OSU computer science undergraduate <strong>Nathan Cain</strong> in Maine for a collaborative work
             session and his first experience with ecological field work:
-            <a href="https://flic.kr/s/aHBqjCYD6N">photos</a>.</li>
-        <li>The symposium Building an AI-Ready Ecology and Biodiversity Data Infrastructure for Science
+            <a href="https://flic.kr/s/aHBqjCYD6N">photos</a>.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">June 2026</div>
+          <div><p>The symposium Building an AI-Ready Ecology and Biodiversity Data Infrastructure for Science
             and Action was selected as a <strong>featured presentation</strong> in ESA's
             <a href="https://esa.org/blog/2026/06/25/media-tip-sheet-ai-in-ecology-at-esas-2026-annual-meeting/">media
             tip sheet</a> on AI in ecology at ESA's 2026 Annual Meeting, distributed to journalists
-            ahead of the meeting.</li>
-      </ul>
+            ahead of the meeting.</p></div>
+        </article>
 
-      <div class="news-month">May</div>
-      <ul class="news-list">
-        <li><strong>Coauthored paper accepted</strong> in Methods in Ecology and Evolution:
+        <article class="news-item">
+          <div class="news-date">May 2026</div>
+          <div><p><strong>Coauthored paper accepted</strong> in Methods in Ecology and Evolution:
             <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210x.70309">ForestForTrees:
-            an R package to infer forest structure from remote sensing data</a>.</li>
-        <li>Passed comprehensive exams and <strong>advanced to PhD candidacy</strong>, huge thank you to my committee:
-            Sydne Record, Brian McGill, Jacquelyn Gill, Jonathan Knott, and Angela Mech.</li>
-      </ul>
+            an R package to infer forest structure from remote sensing data</a>.</p></div>
+        </article>
 
-      <div class="news-month">April</div>
-      <ul class="news-list">
-        <li>Presented a poster and <strong>workshopped newly developed AI tools</strong> at the first
+        <article class="news-item">
+          <div class="news-date">May 2026</div>
+          <div><p>Passed comprehensive exams and <strong>advanced to PhD candidacy</strong>, huge thank you to my committee:
+            Sydne Record, Brian McGill, Jacquelyn Gill, Jonathan Knott, and Angela Mech.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Apr 2026</div>
+          <div><p>Presented a poster and <strong>workshopped newly developed AI tools</strong> at the first
             <a href="https://imageomics.osu.edu/conference-main">Imageomics Conference 2026</a> in
-            Columbus, Ohio.</li>
-        <li>Presented the <strong>NEON Virtual Challenge and awards</strong> at the
-            <a href="https://www.farr-rcn.org/workshop26">FARR RCN Workshop 2026</a> in Washington, DC.</li>
-        <li>Work from the National Ecological Observatory Network Virtual Challenge Hackathon was featured
+            Columbus, Ohio.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Apr 2026</div>
+          <div><p>Presented the <strong>NEON Virtual Challenge and awards</strong> at the
+            <a href="https://www.farr-rcn.org/workshop26">FARR RCN Workshop 2026</a> in Washington, DC.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Apr 2026</div>
+          <div><p>Work from the National Ecological Observatory Network Virtual Challenge Hackathon was featured
             in the
             <a href="https://www.neonscience.org/impact/observatory-blog/neon-live-virtual-challenge-hackathon-brings-data-science-and-ecology-0">NEON
-            Observatory Blog</a>.</li>
-        <li>Contributed to an <strong>accepted paper</strong> at the
+            Observatory Blog</a>.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Apr 2026</div>
+          <div><p>Contributed to an <strong>accepted paper</strong> at the
             <a href="https://iclr.cc/">International Conference on Learning Representations</a> on scalable
             trait annotation using machine learning
             (<a href="https://arxiv.org/pdf/2604.01619">paper</a>,
-            <a href="https://osu-nlp-group.github.io/sae-trait-annotation/">project page</a>).</li>
-      </ul>
+            <a href="https://osu-nlp-group.github.io/sae-trait-annotation/">project page</a>).</p></div>
+        </article>
 
-      <div class="news-month">March</div>
-      <ul class="news-list">
-        <li>Featured in <a href="https://www.nytimes.com/2026/03/05/climate/trump-nature-assessment.html">The
+        <article class="news-item">
+          <div class="news-date">Mar 2026</div>
+          <div><p>Featured in <a href="https://www.nytimes.com/2026/03/05/climate/trump-nature-assessment.html">The
             New York Times</a> coverage of the <a href="https://naturerecord.org/">Nature Record</a>
             (formerly the U.S. National Nature Assessment), where I served as a <strong>coauthor</strong> on the chapter
-            Terrestrial Ecosystems of the United States.</li>
-      </ul>
+            Terrestrial Ecosystems of the United States.</p></div>
+        </article>
 
-      <div class="news-month">January</div>
-      <ul class="news-list">
-        <li><strong>ORISE work published</strong> in Conservation Biology:
+        <article class="news-item">
+          <div class="news-date">Jan 2026</div>
+          <div><p><strong>ORISE work published</strong> in Conservation Biology:
             <a href="https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/cobi.70202">Comprehensive
-            framework for assessing and optimizing existing research networks</a>.</li>
-        <li>Aly and Sydne traveled to the NEON Biorepository to finish data collection on the <strong>NEON
-            Carabid dataset</strong> after nine months of work.</li>
-      </ul>
+            framework for assessing and optimizing existing research networks</a>.</p></div>
+        </article>
 
-      <h3 class="news-year">2025</h3>
+        <article class="news-item">
+          <div class="news-date">Jan 2026</div>
+          <div><p>Aly and Sydne traveled to the NEON Biorepository to finish data collection on the <strong>NEON
+            Carabid dataset</strong> after nine months of work.</p></div>
+        </article>
 
-      <div class="news-month">December</div>
-      <ul class="news-list">
-        <li><strong>Preliminary results</strong> from the dissertation chapter
+        <article class="news-item">
+          <div class="news-date">Dec 2025</div>
+          <div><p><strong>Preliminary results</strong> from the dissertation chapter
             "<a href="https://agu.confex.com/agu/agu25/meetingapp.cgi/Paper/1958098">Multimodal crown
-            segmentation across spatial resolutions</a>" presented at AGU 2025 in New Orleans.</li>
-      </ul>
+            segmentation across spatial resolutions</a>" presented at AGU 2025 in New Orleans.</p></div>
+        </article>
 
-      <div class="news-month">October</div>
-      <ul class="news-list">
-        <li>Passed my <strong>PhD dissertation proposal defense</strong>:
+        <article class="news-item">
+          <div class="news-date">Oct 2025</div>
+          <div><p>Passed my <strong>PhD dissertation proposal defense</strong>:
             <a href="https://video.maine.edu/media/Alyson+East+Proposal+10-20-25/1_z34ajimf/370924972">Scaling
-            Ecological Insights</a>.</li>
-      </ul>
+            Ecological Insights</a>.</p></div>
+        </article>
 
-      <div class="news-month">September</div>
-      <ul class="news-list">
-        <li><strong>First dissertation chapter accepted</strong> in
+        <article class="news-item">
+          <div class="news-date">Sept 2025</div>
+          <div><p><strong>First dissertation chapter accepted</strong> in
             <a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.70140">Methods in
             Ecology and Evolution</a>, presenting evidence-based protocols for computer-vision imaging of
-            biodiversity specimens.</li>
-        <li>The <a href="https://www.nsfhdr.org/mlchallenge">HDR Machine Learning Challenge</a> launched
-            using a subset of Biorepository images.</li>
-      </ul>
+            biodiversity specimens.</p></div>
+        </article>
 
-      <div class="news-month">August</div>
-      <ul class="news-list">
-        <li>The "<strong>Beyond Beetle Bodysize</strong>" team presented final results and next steps for sparse
-            autoencoder-identified traits at the Imageomics Funcapalooza workshop in Columbus, Ohio.</li>
-        <li>"Optimizing Image Capture for Computer Vision-Powered Taxonomic Identification and Trait
+        <article class="news-item">
+          <div class="news-date">Sept 2025</div>
+          <div><p>The <a href="https://www.nsfhdr.org/mlchallenge">HDR Machine Learning Challenge</a> launched
+            using a subset of Biorepository images.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Aug 2025</div>
+          <div><p>The "<strong>Beyond Beetle Bodysize</strong>" team presented final results and next steps for sparse
+            autoencoder-identified traits at the Imageomics Funcapalooza workshop in Columbus, Ohio.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Aug 2025</div>
+          <div><p>"Optimizing Image Capture for Computer Vision-Powered Taxonomic Identification and Trait
             Recognition of Biodiversity Specimens,"
-            <a href="https://flic.kr/p/2roYvqJ">poster presentation at ESA</a>.</li>
-        <li>Delivered an <strong>invited talk</strong> at the ESA Annual Meeting Career Central: Thriving in Grad School.
-            See also <a href="https://www.connectivityandconservation.com/grad-school-resources">Kathleen
-            Carroll's resources</a> developed for the original session.</li>
-        <li><strong>Passed the chair seat</strong> to Cait Rottler at the Early Career Ecologists Section mixer at the ESA
-            Annual Meeting in Baltimore, MD.</li>
-        <li>Accepted <strong>three section awards</strong> on behalf of the ESA Early Career Ecologists Section: Section of
-            Merit, Innovative Leadership Structure, and Innovative Member Engagement.</li>
-        <li>Represented early-career scientists at the <strong>ESA Governing Board</strong> meeting in Baltimore, MD.</li>
-      </ul>
+            <a href="https://flic.kr/p/2roYvqJ">poster presentation at ESA</a>.</p></div>
+        </article>
 
-      <div class="news-month">June</div>
-      <ul class="news-list">
-        <li><strong>Co-organized</strong> the
+        <article class="news-item">
+          <div class="news-date">Aug 2025</div>
+          <div><p>Delivered an <strong>invited talk</strong> at the ESA Annual Meeting Career Central: Thriving in Grad School.
+            See also <a href="https://www.connectivityandconservation.com/grad-school-resources">Kathleen
+            Carroll's resources</a> developed for the original session.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Aug 2025</div>
+          <div><p><strong>Passed the chair seat</strong> to Cait Rottler at the Early Career Ecologists Section mixer at the ESA
+            Annual Meeting in Baltimore, MD.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Aug 2025</div>
+          <div><p>Accepted <strong>three section awards</strong> on behalf of the ESA Early Career Ecologists Section: Section of
+            Merit, Innovative Leadership Structure, and Innovative Member Engagement.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">Aug 2025</div>
+          <div><p>Represented early-career scientists at the <strong>ESA Governing Board</strong> meeting in Baltimore, MD.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">June 2025</div>
+          <div><p><strong>Co-organized</strong> the
             <a href="https://imageomics.osu.edu/news/2025/06/bring-data-funk-funcapalooza-2025-workshop-announced">Imageomics
             Funcapalooza</a> workshop, advancing machine-learning approaches for functional trait
-            discovery in biodiversity science.</li>
-        <li>Joined the <a href="https://weareunitedbynature.org/">United By Nature</a> Terrestrial chapter.</li>
-        <li>"Fine-Grained Taxonomy with Vision Models: A Benchmark on Long-Tailed and Domain-Adaptive
-            Classification" accepted to <strong>CV4Animals</strong>.</li>
-        <li><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.70023">Early-Career
+            discovery in biodiversity science.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">June 2025</div>
+          <div><p>Joined the <a href="https://weareunitedbynature.org/">United By Nature</a> Terrestrial chapter.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">June 2025</div>
+          <div><p>"Fine-Grained Taxonomy with Vision Models: A Benchmark on Long-Tailed and Domain-Adaptive
+            Classification" accepted to <strong>CV4Animals</strong>.</p></div>
+        </article>
+
+        <article class="news-item">
+          <div class="news-date">June 2025</div>
+          <div><p><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.70023">Early-Career
             Publishing and Reviewing: Pitfalls and Perspectives</a> published in ESA's Bulletin, a
             synthesis of survey results from ESA Early Career Ecologist Section members and a resulting
-            discourse with the Editors in Chief of the ESA journals.</li>
-      </ul>
+            discourse with the Editors in Chief of the ESA journals.</p></div>
+        </article>
 
-      <div class="news-month">May</div>
-      <ul class="news-list">
-        <li><strong>Implemented imaging and automated processing workflows</strong> at the
+        <article class="news-item">
+          <div class="news-date">May 2025</div>
+          <div><p><strong>Implemented imaging and automated processing workflows</strong> at the
             <a href="https://biorepo.neonscience.org/portal/index.php">NEON Biorepository</a> in Tempe,
             Arizona, training staff and scaling specimen digitization for carabid beetle collections
-            (<a href="https://github.com/Imageomics/CarabidImaging">processing pipeline</a>).</li>
-      </ul>
+            (<a href="https://github.com/Imageomics/CarabidImaging">processing pipeline</a>).</p></div>
+        </article>
 
-      <div class="news-month">April</div>
-      <ul class="news-list">
-        <li>Aly and <a href="https://smrayeed.github.io/">Rayeed</a> presented <strong>final results from the beetle-intake work</strong> at the <a href="https://imageomics.osu.edu/allhands">Imageomics all-hands</a>
-            meeting in Columbus, Ohio.</li>
-      </ul>
+        <article class="news-item">
+          <div class="news-date">Apr 2025</div>
+          <div><p>Aly and <a href="https://smrayeed.github.io/">Rayeed</a> presented <strong>final results from the beetle-intake work</strong> at the <a href="https://imageomics.osu.edu/allhands">Imageomics all-hands</a>
+            meeting in Columbus, Ohio.</p></div>
+        </article>
 
-      <div class="news-month">January</div>
-      <ul class="news-list">
-        <li>The <strong>AI and Ecology course</strong> spent three weeks in Hawaii; the beetle-intake group imaged the
+        <article class="news-item">
+          <div class="news-date">Jan 2025</div>
+          <div><p>The <strong>AI and Ecology course</strong> spent three weeks in Hawaii; the beetle-intake group imaged the
             entire collection of Hawaiian beetles pinned at the
             <a href="https://www.neonscience.org/field-sites/puum">Pu'u Maka'ala Natural Area Reserve NEON
-            site</a>.</li>
-        <li><strong>Field day</strong> assisting the bioacoustics crew, collecting SIM cards from audio recorders in kīpuka
-            forest patches to assess variation in bird vocals by localized community divergence.</li>
-      </ul>
+            site</a>.</p></div>
+        </article>
 
-      <h3 class="news-year">2024</h3>
+        <article class="news-item">
+          <div class="news-date">Jan 2025</div>
+          <div><p><strong>Field day</strong> assisting the bioacoustics crew, collecting SIM cards from audio recorders in kīpuka
+            forest patches to assess variation in bird vocals by localized community divergence.</p></div>
+        </article>
 
-      <div class="news-month">September</div>
-      <ul class="news-list">
-        <li>Moved back to the University of Maine, Orono, to <strong>begin my PhD</strong> in the
-            <a href="https://sites.google.com/maine.edu/record-lab">Record Lab</a>.</li>
-      </ul>
+        <article class="news-item">
+          <div class="news-date">Sept 2024</div>
+          <div><p>Moved back to the University of Maine, Orono, to <strong>begin my PhD</strong> in the
+            <a href="https://sites.google.com/maine.edu/record-lab">Record Lab</a>.</p></div>
+        </article>
+
+      </div>
+      <p class="scrollpanel-count" data-count-of=".news-item" data-count-noun="updates">37 updates</p>
     </div>
   </section>
 
   <!-- ================= CONTACT ================= -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact rise">
     <div class="wrap">
       <h2>Contact</h2>
       <p>I'm always looking for new and exciting opportunities. Let's connect.</p>
@@ -318,7 +401,5 @@
     <span>University of Maine, Record Lab</span>
   </div>
 </footer>
-
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

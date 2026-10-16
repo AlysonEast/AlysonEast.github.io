@@ -15,7 +15,8 @@ The only external resources loaded at runtime are:
 - Altmetric and Dimensions metric badges on the two project pages (loaded by DOI).
 
 Do not introduce a build tool, bundler, CSS framework, JS framework, or npm
-dependencies. Keep everything editable by hand.
+dependencies. Keep everything editable by hand. `site.js` is the only script in
+the repo and has no dependencies; keep it that way.
 
 ## File map
 
@@ -28,7 +29,8 @@ dependencies. Keep everything editable by hand.
 | `research-forest-scaling.html` | In-depth project page (tree crowns → forest patterns) + live metrics |
 | `research-beetles.html` | In-depth project page (beetles, big data, AI) + live metrics |
 | `style.css` | All styling for every page. Edit tokens in `:root` to restyle globally |
-| `assets/` | Images and files (photos, CV PDF). Also `assets/beetles/`, `assets/forest/` |
+| `site.js` | All behaviour: scroll reveal, news scroll panel, item count, footer year. Loaded in `<head>` on every page |
+| `assets/` | Images and files (photos, CV PDF). Also `assets/beetles/`, `assets/forest/`, `assets/Pubs/` (publication figures, full-size sources in `assets/Pubs/originals/`) |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
 Nav on every page: **About · Research · Publications · Teaching · News · Contact**.
@@ -41,7 +43,9 @@ to `research.html`. If you change the nav, change it in every HTML file.
 
 Defined once in `style.css` under `:root`:
 - Colors (earth tones): `--paper #f7f2ea` (warm sand), `--ink #264025` (deep forest),
-  `--accent #7b4b36` (bark brown, all text links), plus `--accent-warm #ad6b4b`
+  `--accent #7b4b36` (bark brown, all text links; the one exception is a
+  `.pub-title` link, which stays `--ink` with a `--line` underline and turns
+  `--accent` on hover, so a page of titles doesn't go brown), plus `--accent-warm #ad6b4b`
   (terracotta, decorative marks only, too light for text) and `--lichen #82896e`,
   soft/faint ink variants, and `--line` for dividers. Every text token clears WCAG AA
   on `--paper`; keep it that way if you retune them.
@@ -53,11 +57,18 @@ Reuse existing components and class names rather than inventing new ones:
 `.hero-inner` / `.hero-grid` / `.hero-photo`, `.subhero` / `.subhero-img`,
 `.metrics` / `.metric` / `.metric-num` / `.metric-label`, `.gallery`,
 `.highlights`, `.rblock`, `.pub-list` / `.pub-inline`, `.course` / `.role-line`,
-`.mentor`, `.facts`, `.news-year` / `.news-month` / `.news-list`.
+`.mentor`, `.facts`, `.news` / `.news-item` / `.news-date`, `.scrollpanel` /
+`.scrollpanel-count`, `.rise`, `.pub-entry` / `.pub-body` / `.pub-title` /
+`.pub-authors` / `.pub-venue` / `.pub-links` / `.pub-fig`.
 
 Keep the quality floor: responsive to mobile, visible keyboard focus, meaningful
 `alt` text on images, `prefers-reduced-motion` respected. Don't add scroll
 animations or hover effects beyond what's already there.
+
+The one piece of scroll motion is `.rise`: a single short fade-up as a section
+enters, added by `site.js` and used only on the home page's content
+sections. The inner pages are deliberately static. Don't extend it to more
+elements, and don't add a second kind of motion.
 
 ## Content & voice conventions
 
@@ -65,8 +76,8 @@ animations or hover effects beyond what's already there.
 - **No em dashes** anywhere in prose. Use commas, parentheses, or a period.
 - **No "meta" separators in prose** (e.g. `A · B · C`, or a spaced en/em dash used
   as a label). The middle dot is fine only inside existing metadata lines like
-  `.role-line` and `.news-month` groupings that already use it.
-- **News items:** each `<li>` may bold **one** key phrase with `<strong>` to draw
+  `.role-line` that already use it.
+- **News items:** each item may bold **one** key phrase with `<strong>` to draw
   it out. One phrase per item, no more.
 - **Role accuracy matters.** Don't inflate titles or responsibilities. Preserve
   wording like "contributed to," "helped lead," "validated the package."
@@ -117,10 +128,16 @@ upscale, and keep an original if you overwrite.
 
 ## How to add content later
 
-- **News:** in `index.html` `#news`, copy an `<li>` into the right month, newest at
-  top; optionally bold one phrase.
-- **Publication:** in `publications.html`, copy an entry in the right year's
-  `<ul class="pub-list">`; `<span class="me">` bolds her name.
+- **News:** in `index.html` `#news`, copy one `<article class="news-item">`, set its
+  `.news-date` (short form, e.g. `Sept 2026`), and put it at the top of the feed.
+  The feed is one flat list, newest first, with no year or month headings. The
+  "N updates" count under the panel is filled in by `site.js`, so leave it alone.
+- **Publication:** in `publications.html`, copy a `<li class="pub-entry">` into the
+  right year's `<ul class="pub-list">`. The entry stacks title, authors, venue, and
+  an optional links row; `<span class="me">` bolds her name. To give it a figure,
+  add `pub-entry--media` to the `<li>` and a `.pub-fig` div after `.pub-body`, with
+  the image in `assets/Pubs/` (keep the full-size source in `assets/Pubs/originals/`
+  and the web copy at most 900px on the long edge).
 - **Course / mentee:** in `teaching.html`, copy a `.course` or `.mentor` block.
 
 ## Metrics badges
