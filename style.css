@@ -415,7 +415,70 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 .mentor p { margin-bottom: 0; }
 
 /* research overview: link on flagship blocks */
-.rblock .readmore { display: inline-block; margin-top: .6rem; font-size: .9rem; }
+.rblock .readmore,
+.area .readmore { display: inline-block; margin-top: .6rem; font-size: .9rem; }
+
+/* home: wide landscape banner above the bio */
+.hero--banner { padding-top: 32px; }
+.hero-banner { margin-top: 0; margin-bottom: 44px; }
+
+/* publications: "At a glance" summary, a grid of .metric cells */
+.pub-summary {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 40px; align-items: start; border-top: 0; margin-bottom: 0;
+}
+.pub-summary .metric { min-width: 0; gap: 8px; }
+.pub-summary .metric-label { max-width: 32ch; font-size: .85rem; color: var(--ink-soft); }
+@media (max-width: 820px) { .pub-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .pub-summary { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   CV page
+   Each group is a .te-institution label, an h2, then either
+   .cv-entry rows (date rail + body, like a .news-item) or a
+   .cv-records list (name and detail, date on the right).
+   ========================================================= */
+.cv-intro { display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: baseline; }
+.cv-group { margin-top: 56px; }
+.cv-group > h2 { margin-bottom: .4rem; }
+.cv-group > .cv-sub { color: var(--ink-soft); font-size: .95rem; margin-bottom: 1rem; }
+.cv-group .te-institution { margin-top: 0; }
+
+.cv-entry {
+  display: grid; grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 0 24px; padding: 16px 0; border-bottom: 1px solid var(--line);
+}
+.cv-entry:last-child { border-bottom: 0; }
+.cv-date {
+  font-size: .78rem; font-weight: 500; letter-spacing: .04em;
+  color: var(--ink-faint); padding-top: .3rem;
+}
+.cv-entry h3 { font-size: 1.08rem; margin-bottom: .15rem; }
+.cv-entry .role-line { font-size: .85rem; color: var(--accent); margin-bottom: .35rem; }
+.cv-entry p { font-size: .95rem; color: var(--ink-soft); margin-bottom: 0; }
+.cv-entry ul { margin: .3rem 0 0; padding-left: 1.1rem; font-size: .95rem; color: var(--ink-soft); max-width: var(--measure); }
+.cv-entry li { margin-bottom: .2rem; }
+
+.cv-records { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.cv-records li {
+  display: flex; justify-content: space-between; gap: 24px; align-items: baseline;
+  padding: 12px 0 12px .85rem; border-bottom: 1px solid var(--line);
+  border-left: 2px solid transparent;
+}
+.cv-records .name { font-weight: 600; color: var(--ink); display: block; }
+.cv-records .detail { font-size: .9rem; color: var(--ink-soft); display: block; max-width: var(--measure); }
+.cv-records .when { font-size: .78rem; color: var(--ink-faint); white-space: nowrap; letter-spacing: .04em; }
+/* leadership roles and major contributions */
+.cv-records li.hl { border-left-color: var(--accent-warm); }
+.cv-records li.hl .name { color: var(--accent); }
+.cv-note { font-size: .82rem; color: var(--ink-faint); margin-top: 10px; }
+
+@media (max-width: 560px) {
+  .cv-entry { grid-template-columns: 1fr; gap: 4px; }
+  .cv-date { padding-top: 0; }
+  .cv-records li { flex-direction: column; gap: 2px; }
+  .cv-records .when { order: -1; }
+}
 
 /* =========================================================
    Scroll reveal

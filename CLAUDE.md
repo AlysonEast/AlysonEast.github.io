@@ -26,6 +26,7 @@ the repo and has no dependencies; keep it that way.
 | `research.html` | Research overview: the two current projects + additional and earlier research |
 | `publications.html` | Full publication + conference-paper list |
 | `teaching.html` | Teaching philosophy, courses (grouped by institution), mentorship |
+| `cv.html` | Stylized CV: current projects, education, experience, mentorship, service, talks, awards, media. Mirrors `assets/cv.pdf` |
 | `research-forest-scaling.html` | In-depth project page (tree crowns → forest patterns) + live metrics |
 | `research-beetles.html` | In-depth project page (beetles, big data, AI) + live metrics |
 | `style.css` | All styling for every page. Edit tokens in `:root` to restyle globally |
@@ -33,9 +34,9 @@ the repo and has no dependencies; keep it that way.
 | `assets/` | Images and files (photos, CV PDF). Also `assets/beetles/`, `assets/forest/`, `assets/Pubs/` (publication figures, full-size sources in `assets/Pubs/originals/`) |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
-Nav on every page: **About · Research · Publications · Teaching · News · Contact**.
-About / News / Contact are sections of `index.html`; Research, Publications, and
-Teaching are their own pages; the two project pages are linked from `research.html`.
+Nav on every page: **About · Research · Publications · Teaching · CV · News · Contact**.
+About / News / Contact are sections of `index.html`; Research, Publications,
+Teaching, and CV are their own pages; the two project pages are linked from `research.html`.
 The home page keeps a short `#research` section: a one-paragraph statement plus a link
 to `research.html`. If you change the nav, change it in every HTML file.
 
@@ -59,7 +60,10 @@ Reuse existing components and class names rather than inventing new ones:
 `.highlights`, `.rblock`, `.pub-list` / `.pub-inline`, `.course` / `.role-line`,
 `.mentor`, `.facts`, `.news` / `.news-item` / `.news-date`, `.scrollpanel` /
 `.scrollpanel-count`, `.rise`, `.pub-entry` / `.pub-body` / `.pub-title` /
-`.pub-authors` / `.pub-venue` / `.pub-links` / `.pub-fig`.
+`.pub-authors` / `.pub-venue` / `.pub-links` / `.pub-fig`, `.pub-summary` (the
+"At a glance" counts on `publications.html`, typed by hand), `.area` (image + text
+blocks on `research.html`), `.hero-banner` (home landscape banner), `.cv-group` /
+`.cv-entry` / `.cv-date` / `.cv-records` (CV page; `li.hl` marks a leadership role).
 
 Keep the quality floor: responsive to mobile, visible keyboard focus, meaningful
 `alt` text on images, `prefers-reduced-motion` respected. Don't add scroll
@@ -95,7 +99,9 @@ Expected paths and shapes (crop with `object-fit`, already handled by CSS):
 - `assets/beetles-hero.jpg`, `assets/forest-hero.jpg` — project banners, wide ~21:9.
 - `assets/beetles/01.jpg`, `02.jpg`, … — beetle gallery, square ~1:1.
 - `assets/forest/01.jpg`, `02.jpg`, … — forest gallery, square ~1:1.
-- `assets/cv.pdf` — optional CV (if added, link it in the nav on every page).
+- `assets/cv.pdf` — the PDF CV, linked from `cv.html` (the nav's CV item points at `cv.html`).
+- `assets/home-hero.jpg` — home banner, wide ~21:9.
+- `assets/research/forest.jpg`, `beetles.jpg` — research overview images, ~5:4.
 
 Prefer these conventional filenames: copy/rename source photos into them so the
 existing slots light up, rather than scattering references to arbitrary names.

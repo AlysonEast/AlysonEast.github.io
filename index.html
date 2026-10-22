@@ -27,6 +27,7 @@
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
     </div>
@@ -38,7 +39,13 @@
   <!-- ================= HERO / ABOUT =================
        Single-column by default. To show a photo beside the text, add
        assets/portrait.jpg to the repo and follow the two-column note in README.md. -->
-  <header class="hero" id="about">
+  <header class="hero hero--banner" id="about">
+    <!-- Wide banner above the bio. Hidden automatically if the image is missing. -->
+    <div class="wrap">
+      <img class="subhero-img hero-banner" src="assets/home-hero.jpg"
+           alt="Spruce forest falling away from a granite summit in Acadia National Park, looking out over the sea and offshore islands"
+           onerror="this.style.display='none'">
+    </div>
     <div class="wrap hero-grid">
       <h1 class="hero-reveal">Alyson East</h1>
       <p class="role hero-reveal d1">Quantitative ecologist working in remote sensing, biodiversity, and landscape ecology</p>
@@ -82,6 +89,7 @@
             <em>Methods in Ecology and Evolution</em>, plus the co-developed ForestForTrees R package
             for inferring forest structure from remote sensing.</li>
       </ul>
+      <a class="section-link" href="cv.html">See the complete list of current projects, mentorship, and service</a>
     </div>
   </section>
 
