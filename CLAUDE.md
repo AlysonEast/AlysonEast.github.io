@@ -42,6 +42,9 @@ to `research.html`. If you change the nav, change it in every HTML file.
 
 ## Design system (do not drift from this)
 
+Every page links `style.css?v=YYYY-MM-DD`. After changing `style.css`, bump that date in
+every HTML file so browsers fetch the new stylesheet instead of a cached one.
+
 Defined once in `style.css` under `:root`:
 - Colors (earth tones): `--paper #f7f2ea` (warm sand), `--ink #264025` (deep forest),
   `--accent #7b4b36` (bark brown, all text links; the one exception is a
