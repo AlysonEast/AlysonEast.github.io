@@ -63,7 +63,11 @@ Reuse existing components and class names rather than inventing new ones:
 `.pub-authors` / `.pub-venue` / `.pub-links` / `.pub-fig`, `.pub-summary` (the
 "At a glance" counts on `publications.html`, typed by hand), `.area` (image + text
 blocks on `research.html`), `.hero-banner` (home landscape banner), `.cv-group` /
-`.cv-entry` / `.cv-date` / `.cv-records` (CV page; `li.hl` marks a leadership role).
+`.cv-entry` / `.cv-date` / `.cv-records` (CV page; `li.hl` marks a leadership role),
+`.cv-head` / `.cv-portrait`, `.students` / `.student` / `.student-photo` / `.student-initials`
+(CV student bios), `.news-item--media` / `.news-thumb` (news thumbnails, in `assets/news/`),
+`.media-split` (home highlights + photo), `.course--media` / `.course-photo`,
+`.has-thumb` / `.more-thumb` (research overview), `.figure`, `.page-banner`.
 
 Keep the quality floor: responsive to mobile, visible keyboard focus, meaningful
 `alt` text on images, `prefers-reduced-motion` respected. Don't add scroll

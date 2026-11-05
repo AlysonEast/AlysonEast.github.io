@@ -1,0 +1,27 @@
+id,priority,page,section,placement,slot_status,shape,suggested_subject,unused_photo_to_consider,your_filename,photo_description_for_alt_text,notes
+N21,High,index.html,News (Nov 2026),Thumbnail on: presented body-size results at ECN,CSS ready (news-item--media),1:1 square,"You presenting at ECN, or a slide of body-size results",,,,
+N22,High,index.html,News (Nov 2026),Thumbnail on: co-organized ECN symposium + Entomology 2026,CSS ready (news-item--media),1:1 square,Symposium speakers or organizers group photo,,,,Replaces the old N02 row
+N23,Med,index.html,News (Nov 2026),Thumbnail on: NEON HQ visit with Ambassador cohort,CSS ready (news-item--media),1:1 square,Ambassador cohort at NEON HQ in Boulder,,,,
+N09,Med,index.html,News (May 2026),Thumbnail on: advanced to PhD candidacy,CSS ready (news-item--media),1:1 square,Celebration photo with committee or lab,,,,
+N13,Med,index.html,News (Dec 2025),"Thumbnail on: AGU 2025 poster, New Orleans",CSS ready (news-item--media),1:1 square,At the poster,,,,
+N14,Low,index.html,News (Oct 2025),Thumbnail on: proposal defense,CSS ready (news-item--media),1:1 square,Title slide or post-defense photo,,,,
+S1,High,cv.html,Students,Headshot for Sarah McCullough,CSS ready (initials shown until added),1:1 square,Headshot,,,,Ask permission
+S2,High,cv.html,Students,Headshot for Nicole McAdam,CSS ready (initials shown until added),1:1 square,Headshot,,,,Ask permission
+S3,High,cv.html,Students,Headshot for Gaven Hollenbeck,CSS ready (initials shown until added),1:1 square,Headshot,,,,Ask permission
+P1,Med,publications.html,At a glance,Photo beside the six count cells,needs CSS (can reuse media-split),4:5 portrait,You at work: imaging station or holding a specimen drawer,AlysonEast.jpg / 2026_People_AlysonEastSydneRecord.jpg,,,Last round's cell listed two files; pick one
+P2,Low,publications.html,Page top,Wide banner above the Publications heading,small (subhero-img),21:9 wide,Specimen trays or a canopy from above,Beetles2.jpg / Redwood.jpg,,,
+P9,Med,publications.html,Open data and protocols,"Figures for Sentinel Beetles, Hawaii Beetles, Beetle Imaging Procedure",small (pub-fig),"any, max 900px","Dataset sample grid, a Hawaiian beetle, the imaging rig",Hawaii4.JPG / TempeCamera.jpg,,,One filename per dataset
+H1,Low,index.html,About (hero),Swap the hero portrait,slot exists,3:4 portrait,Current headshot or field portrait,AlysonEast.jpg / AlySagebrush.jpg,,,Only if you want to replace portrait.jpg
+H3,Low,index.html,Research statement,Pair of small images under the paragraph,needs CSS,2 x 3:2,Tree crowns from above + beetle close-up,Tree.jpg / Beetles2.jpg,,,
+H4,Low,index.html,Contact,Thin landscape strip,needs CSS,21:9 wide,A Maine landscape,LandscapeAcadia.jpg / LandscapeNE1.jpg,,,Last round's cell listed both; pick one
+R1,Med,research.html,Page top,Wide banner above Research,small (subhero-img),21:9 wide,Drone over alpine terrain or a canopy from above,MtWashingtonDrone.jpg / MtBlackmore.JPEG,,,
+R2,Low,research.html,Additional research,Thumbnail: Research network representation,CSS ready (has-thumb),4:3,Experimental Forest site or network map,Tree.jpg,,,
+R3,Low,research.html,Additional research,Thumbnail: Monitoring ecological integrity,CSS ready (has-thumb),4:3,Satellite view or intact landscape,MtBlackmore.JPEG,,,
+R5,Low,research.html,Additional research,Thumbnail: Wildlands of the Mountain West,CSS ready (has-thumb),4:3,Mountain West working landscape,AlySagebrush.jpg / IdahoButterfly.jpg,,,LandUse photos now sit on Publications
+F1,High,research-forest-scaling.html,Gallery,More gallery images (forest/06.jpg onward),slot exists,1:1 square,"Drone flights, crown segmentation, field plots, you in the field",Redwood.jpg / Tree.jpg / MtWashingtonDrone.jpg,,,Last round's cell was ambiguous
+F2,Med,research-forest-scaling.html,Project narrative,Inline figure between paragraphs,CSS ready (figure),16:9,Crown segmentation before/after,,,,
+T2,High,teaching.html,Courses,Photo on Experiential AI & Ecology,CSS ready (course--media),4:3,Hawaii course in the field or imaging beetles,Hawaii2.JPG / Hawaii4.JPG,,,Hawaii1 and Hawaii3 are on the home news feed
+T6,Low,teaching.html,Courses,Photo on LiDAR Remote Sensing,CSS ready (course--media),4:3,Students with lidar data or a drone,MtWashingtonDrone.jpg,,,
+T9,Low,teaching.html,Courses,Photo on Biological Diversity of Life,CSS ready (course--media),4:3,Lab or specimen session,,,,
+U1,Low,(any),Unplaced,"ECE.png: group photo in a high-rise room, conference badges",,,,ECE.png,,,Where does this belong? (event and year)
+U2,Low,(any),Unplaced,Oaks.jpg: oak seedlings in the common garden,,,,Oaks.jpg,,,Could go on a student bio or the mentorship gallery

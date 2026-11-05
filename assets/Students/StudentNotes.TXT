@@ -1,0 +1,13 @@
+Leah Cotton: (2025-2026) Master's student in biology at ASU, imaged at biorepo, presented final findings to NEON on Collections Status w/ recomendations for collection managment. Taught how to image in a standard, optimized way for Computer vision applications and manage data in a way that includes robust metadata and controles for data leakage. Coauthor on 1 Publication
+
+Jacqueline Dominguez: (2025-2026) Master's student in biology at ASU, imaged at biorepo. Taught how to image in a standard, optimized way for Computer vision applications and manage data in a way that includes robust metadata and controles for data leakage. Coauthor on 1 publication.
+
+Sarah McCullough: (2025) GIS projects and tree crowns annotations, wrote blog post on tree crowns literature, went on to Graduate School in Ottowa CA. https://www.linkedin.com/in/sarah-mccullough-3491172b3/
+
+Nathan Cain: (2025-present) Ohio state U undergraduate Student. AI workflow development, and ecological data integration, supporting interdisciplinary skill-building at the interface of ecology and computer vision. Developed AI processing workflow for publication and beetles dataset. Developed highly accurate Keypoint estimation for beetle bodysize variation work. Collaborated on interdisiplenary experimantal SAE's for novel trait quantification study (in prep). 
+
+Nicole McAdam: (2026) UMaine undergraduate. Beetle morphometic annotations, documentation of methods. Basic exposure to command line and python. Worked on estabilight large red Oak common garden experiment.
+
+Kaitlyn Washburn: (2026-present) UMaine undergraduate. Beetle morphometic annotations, documentation of methods. Basic exposure to command line and python. Worked on mantaining large red Oak common garden experiment.
+
+Gaven Hollenbeck: (2026-present): UMaine undergraduate. Beetle morphometic annotations, documentation of methods. Basic exposure to command line and python.
