@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2026-11-05">
+  <link rel="stylesheet" href="style.css?v=2026-11-17">
   <script src="site.js"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
       <a href="index.html#about">About</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
-      <a href="teaching.html" aria-current="page">Teaching</a>
+      <a href="teaching.html" aria-current="page">Teaching & Mentorship</a>
       <a href="cv.html">CV</a>
       <a href="index.html#news">News</a>
       <a href="index.html#contact">Contact</a>
@@ -148,19 +148,114 @@
       <!-- ===== Mentorship ===== -->
       <h2 style="margin-top:56px;">Mentorship</h2>
 
+      <!-- Students: one .student per person, nested in the .mentor block for their
+           project. With no photo yet, a .student-initials block stands in; swap it
+           for an <img class="student-photo"> when one arrives. -->
       <div class="mentor">
-        <h3>Undergraduate Research Mentor, Forest Remote Sensing</h3>
-        <div class="role-line">University of Maine · 2024–present</div>
-        <p>Mentoring an undergraduate researcher on a dissertation-related project, with training in data
-           analysis, scientific writing, and publication development.</p>
+        <h3>Cross-Institutional Research Mentor, NEON Beetle Imaging Project</h3>
+        <div class="role-line">Arizona State University, University of Maine, and The Ohio State
+          University · 2024–present</div>
+        <p>Mentoring two ASU biology master's students, three University of Maine undergraduates, and
+           one OSU computer science undergraduate in biodiversity imaging, AI workflow development, and
+           ecological data integration, supporting interdisciplinary skill-building at the interface of
+           ecology and computer vision.</p>
+        <div class="students">
+          <div class="student" id="nathan-cain">
+            <img class="student-photo" src="assets/Students/nathan-cain.jpg" alt="Nathan Cain"
+                 loading="lazy" decoding="async" onerror="this.style.display='none'">
+            <div>
+              <h3>Nathan Cain</h3>
+              <div class="role-line">Undergraduate, The Ohio State University · 2025–present</div>
+              <p>Nathan works at the interface of ecology and computer vision, developing AI workflows and
+                integrating ecological data. He built the AI processing workflow behind
+                <a href="publications.html#collection-trays-paper">a publication</a> and the beetle
+                dataset, developed highly accurate keypoint estimation for our work on beetle body-size
+                variation, and collaborates on experimental sparse autoencoders for a novel
+                trait-quantification study (in prep).</p>
+            </div>
+          </div>
+          <div class="student" id="leah-cotton">
+            <img class="student-photo" src="assets/Students/leah-cotton.jpg" alt="Leah Cotton holding a small box of three metallic green beetles"
+                 loading="lazy" decoding="async" onerror="this.style.display='none'">
+            <div>
+              <h3>Leah Cotton</h3>
+              <div class="role-line">Master's student in Biology, Arizona State University · 2025–2026</div>
+              <p>Leah imaged carabid beetles at the NEON Biorepository, learning to photograph specimens in
+                a standardized way built for computer vision and to manage the data with robust metadata
+                and controls for data leakage. She presented her findings on the status of the collection
+                to NEON, with recommendations for collection management, and is a coauthor on
+                <a href="publications.html#collection-trays-paper">one publication</a>.</p>
+            </div>
+          </div>
+          <div class="student" id="jacqueline-dominguez">
+            <img class="student-photo" src="assets/Students/jacqueline-dominguez.jpg" alt="Jacqueline Dominguez giving two thumbs up"
+                 loading="lazy" decoding="async" onerror="this.style.display='none'">
+            <div>
+              <h3>Jacqueline Dominguez</h3>
+              <div class="role-line">Master's student in Biology, Arizona State University · 2025–2026</div>
+              <p>Jacqueline imaged carabid beetles at the NEON Biorepository, learning to photograph
+                specimens in a standardized way built for computer vision and to manage the data with
+                robust metadata and controls for data leakage. She is a coauthor on
+                <a href="publications.html#collection-trays-paper">one publication</a>.</p>
+            </div>
+          </div>
+          <div class="student" id="nicole-mcadam">
+            <div class="student-initials" aria-hidden="true">NM</div>
+            <div>
+              <h3>Nicole McAdam</h3>
+              <div class="role-line">Undergraduate, University of Maine · 2026</div>
+              <p>Nicole annotated beetle morphometrics and documented the methods, picking up the basics of
+                the command line and Python along the way. She also helped establish a large red oak
+                common garden experiment.</p>
+            </div>
+          </div>
+          <div class="student" id="kaitlyn-washburn">
+            <img class="student-photo" src="assets/Students/kaitlyn-washburn.jpg" alt="Kaitlyn Washburn smiling at a table"
+                 loading="lazy" decoding="async" onerror="this.style.display='none'">
+            <div>
+              <h3>Kaitlyn Washburn</h3>
+              <div class="role-line">Undergraduate, University of Maine · 2026–present</div>
+              <p>Kaitlyn annotates beetle morphometrics and documents the methods, with a first introduction
+                to the command line and Python. She also helps maintain the large red oak common garden
+                experiment.</p>
+            </div>
+          </div>
+          <div class="student" id="gaven-hollenbeck">
+            <div class="student-initials" aria-hidden="true">GH</div>
+            <div>
+              <h3>Gaven Hollenbeck</h3>
+              <div class="role-line">Undergraduate, University of Maine · 2026–present</div>
+              <p>Gaven annotates beetle morphometrics and documents the methods, with a first introduction
+                to the command line and Python.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="mentor">
-        <h3>Cross-Institutional Research Mentor, NEON Beetle Imaging Project</h3>
-        <div class="role-line">2024–present</div>
-        <p>Mentoring two ASU biology master's students and one OSU computer science undergraduate in
-           biodiversity imaging, AI workflow development, and ecological data integration, supporting
-           interdisciplinary skill-building at the interface of ecology and computer vision.</p>
+        <h3>Undergraduate Research Mentor, Forest Remote Sensing</h3>
+        <div class="role-line">University of Maine · 2024–present</div>
+        <p>Mentoring undergraduate researchers on dissertation-related projects, with training in data
+           analysis, scientific writing, and publication development.</p>
+        <div class="students">
+          <div class="student" id="sarah-mccullough">
+            <div class="student-initials" aria-hidden="true">SM</div>
+            <div>
+              <h3><a href="https://www.linkedin.com/in/sarah-mccullough-3491172b3/">Sarah McCullough</a></h3>
+              <div class="role-line">Undergraduate, University of Maine · 2025</div>
+              <p>Sarah worked on GIS projects and tree crown annotation, and wrote a blog post reviewing the
+                literature on tree crowns. She has since gone on to graduate school in Ottawa, Canada.</p>
+            </div>
+          </div>
+          <div class="student" id="aaron-loud">
+            <div class="student-initials" aria-hidden="true">AL</div>
+            <div>
+              <h3>Aaron Loud</h3>
+              <div class="role-line">Undergraduate, University of Maine · 2024</div>
+              <p>Aaron worked on GIS projects and tree crown annotation.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="mentor">
@@ -175,7 +270,6 @@
         <img src="assets/teaching/mentor-02.jpg" alt="A mist net strung across a tall-grass meadow at the edge of a Maine forest during field work" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <img src="assets/teaching/mentor-03.jpg" alt="A SEEDS student presenting a slide about their chapter to an audience at the ESA Annual Meeting" loading="lazy" decoding="async" onerror="this.style.display='none'">
       </div>
-      <a class="section-link" href="cv.html#students">Meet the students I mentor</a>
 
       <h2 style="margin-top:56px;">Gallery</h2>
       <div class="gallery">

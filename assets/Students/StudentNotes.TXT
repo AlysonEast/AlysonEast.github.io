@@ -1,13 +1,48 @@
-Leah Cotton: (2025-2026) Master's student in biology at ASU, imaged at biorepo, presented final findings to NEON on Collections Status w/ recomendations for collection managment. Taught how to image in a standard, optimized way for Computer vision applications and manage data in a way that includes robust metadata and controles for data leakage. Coauthor on 1 Publication
+Student mentorship notes. Source for the "Past and Present Students" cards in
+teaching.html's Mentorship section, grouped by project to match the site. Update
+here first, then port changes to teaching.html.
 
-Jacqueline Dominguez: (2025-2026) Master's student in biology at ASU, imaged at biorepo. Taught how to image in a standard, optimized way for Computer vision applications and manage data in a way that includes robust metadata and controles for data leakage. Coauthor on 1 publication.
+== NEON Beetle Imaging Project (Cross-Institutional Research Mentor) ==
+Arizona State University, University of Maine, The Ohio State University. 2024-present.
 
-Sarah McCullough: (2025) GIS projects and tree crowns annotations, wrote blog post on tree crowns literature, went on to Graduate School in Ottowa CA. https://www.linkedin.com/in/sarah-mccullough-3491172b3/
+Nathan Cain: (2025-present) Ohio State University undergraduate. AI workflow
+development and ecological data integration, supporting interdisciplinary
+skill-building at the interface of ecology and computer vision. Developed the AI
+processing workflow behind a publication and the beetle dataset. Developed highly
+accurate keypoint estimation for beetle body-size variation work. Collaborating on
+experimental sparse autoencoders for a novel trait-quantification study (in prep).
 
-Nathan Cain: (2025-present) Ohio state U undergraduate Student. AI workflow development, and ecological data integration, supporting interdisciplinary skill-building at the interface of ecology and computer vision. Developed AI processing workflow for publication and beetles dataset. Developed highly accurate Keypoint estimation for beetle bodysize variation work. Collaborated on interdisiplenary experimantal SAE's for novel trait quantification study (in prep). 
+Leah Cotton: (2025-2026) Master's student in biology, Arizona State University.
+Imaged specimens at the NEON Biorepository in a standardized way built for computer
+vision, with robust metadata and controls for data leakage. Presented final
+findings to NEON on collection status, with recommendations for collection
+management. Coauthor on 1 publication.
 
-Nicole McAdam: (2026) UMaine undergraduate. Beetle morphometic annotations, documentation of methods. Basic exposure to command line and python. Worked on estabilight large red Oak common garden experiment.
+Jacqueline Dominguez: (2025-2026) Master's student in biology, Arizona State
+University. Same imaging protocol and standards as Leah. Coauthor on 1 publication.
 
-Kaitlyn Washburn: (2026-present) UMaine undergraduate. Beetle morphometic annotations, documentation of methods. Basic exposure to command line and python. Worked on mantaining large red Oak common garden experiment.
+Nicole McAdam: (2026) University of Maine undergraduate. Beetle morphometric
+annotation and methods documentation; first exposure to the command line and
+Python. Helped establish the large red oak common garden experiment.
 
-Gaven Hollenbeck: (2026-present): UMaine undergraduate. Beetle morphometic annotations, documentation of methods. Basic exposure to command line and python.
+Kaitlyn Washburn: (2026-present) University of Maine undergraduate. Same beetle
+morphometric annotation and documentation work as Nicole. Helps maintain the common
+garden experiment.
+
+Gaven Hollenbeck: (2026-present) University of Maine undergraduate. Same beetle
+morphometric annotation and documentation work as Nicole.
+
+== Forest Remote Sensing (Undergraduate Research Mentor) ==
+University of Maine. 2024-present.
+
+Sarah McCullough: (2025) GIS projects and tree crown annotation. Wrote a blog post
+reviewing the tree crown literature. Went on to graduate school in Ottawa, Canada.
+https://www.linkedin.com/in/sarah-mccullough-3491172b3/
+
+Aaron Loud: (2024) GIS projects and tree crown annotation.
+
+== SEEDS Mentor, Ecological Society of America ==
+No individual bios on the site, name/year only.
+
+Caryn Iwanaga (2022, Montreal), Ian Crews (2023, Portland), Grace Elleen (2024, Long
+Beach), Max Tchang (2026, Salt Lake City).

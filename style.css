@@ -414,6 +414,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 .mentor h3 { font-family: var(--serif); font-size: 1.1rem; margin-bottom: .1rem; }
 .mentor .role-line { font-size: .82rem; color: var(--ink-faint); margin-bottom: .5rem; }
 .mentor p { margin-bottom: 0; }
+.mentor .students { grid-template-columns: 1fr; margin-top: 14px; }
 
 /* research overview: link on flagship blocks */
 .rblock .readmore,
@@ -488,15 +489,25 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
    ========================================================= */
 
 /* news: optional square thumbnail as a third column */
-.news-item--media { grid-template-columns: 6.5rem minmax(0, 1fr) 5.5rem; }
+.news-item--media {
+  grid-template-columns: 6.5rem minmax(0, 1fr) 9rem;
+  align-items: center;
+}
 .news-thumb {
-  width: 5.5rem; aspect-ratio: 1 / 1; object-fit: cover;
-  border-radius: 3px; background: var(--paper-deep);
+  width: 9rem; aspect-ratio: 1 / 1; object-fit: cover;
+  border-radius: 4px; background: var(--paper-deep);
+}
+@media (max-width: 700px) {
+  .news-item--media { grid-template-columns: 6.5rem minmax(0, 1fr) 6.5rem; }
+  .news-thumb { width: 6.5rem; }
 }
 @media (max-width: 560px) {
-  .news-item--media { grid-template-columns: minmax(0, 1fr) 4.5rem; gap: 4px 16px; }
+  .news-item--media {
+    grid-template-columns: minmax(0, 1fr) 6rem; gap: 8px 16px;
+    align-items: start;
+  }
   .news-item--media .news-date { grid-column: 1 / -1; }
-  .news-thumb { width: 4.5rem; }
+  .news-thumb { width: 6rem; }
 }
 
 /* a list or text block with one photo beside it (home highlights) */
@@ -545,17 +556,17 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
   gap: 0 40px; margin-top: 8px;
 }
 .student {
-  display: grid; grid-template-columns: 4.5rem minmax(0, 1fr);
-  gap: 0 18px; padding: 18px 0; border-bottom: 1px solid var(--line);
+  display: grid; grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 0 22px; padding: 20px 0; border-bottom: 1px solid var(--line);
   align-items: start;
 }
 .student-photo, .student-initials {
-  width: 4.5rem; aspect-ratio: 1 / 1; border-radius: 3px;
+  width: 7rem; aspect-ratio: 1 / 1; border-radius: 4px;
   object-fit: cover; background: var(--paper-deep);
 }
 .student-initials {
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--serif); font-size: 1.3rem; color: var(--ink-faint);
+  font-family: var(--serif); font-size: 1.8rem; color: var(--ink-faint);
 }
 .student h3 { font-size: 1.05rem; margin-bottom: .1rem; }
 .student .role-line { font-size: .82rem; color: var(--ink-faint); margin-bottom: .4rem; }
